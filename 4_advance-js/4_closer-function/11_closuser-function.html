@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure-Function:- in js</title>
+  </head>
+  <body>
+    <script>
+
+      function createCounter() {
+        let count = 0; // 'count' is in the lexical environment of createCounter
+
+        function increment() {
+          count++; // 'increment' closes over 'count'
+          console.log(count);
+        }
+
+        return increment; // We return the inner function
+      }
+
+      const counter1 = createCounter(); // counter1 is now the 'increment' function
+      counter1(); // Output: 1
+      counter1(); // Output: 2s
+
+      const counter2 = createCounter(); // A new closure is created with its own 'count'
+      counter2(); // Output: 1
+      
+    </script>
+  </body>
+</html>

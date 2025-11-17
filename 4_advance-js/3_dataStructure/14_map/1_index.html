@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+</head>
+<body>
+    <script>
+
+        const mapData = new Map();
+
+        mapData.set('name', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+            .set('open', 6)
+            .set('close', 23)
+            .set(true, 'We are open')
+            .set(false, 'We are closed');
+
+
+            console.log(...mapData); //(2) ['name', Array(4)] (2) ['open', 11] (2) ['close', 23] (2) [true, 'We are open'] (2) [false, 'We are closed']
+            console.log(mapData);  // Map(5) {'name' => Array(4), 'open' => 11, 'close' => 23, true => 'We are open', false => 'We are closed'}
+
+            console.log(mapData.get('name'));
+            console.log(mapData.get(true));
+            console.log(mapData.get('open'));
+
+            time = 8;
+            console.log(mapData.get(time > mapData.get('open') && time < mapData.get('close')));
+
+
+            
+
+    </script>
+</body>
+</html>

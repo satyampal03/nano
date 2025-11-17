@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Of Loop - Js</title>
+</head>
+<body>
+    <script>
+        let arr = [-2000, 56000, 4345000, -4534000, -544500, 4456540000, 3453453000,4534500, -4500];
+
+        for (let [i, amount] of arr){
+            if (diposit > 0){
+                console.log(`${i}you diposite =>${diposit}`);
+            }else{
+                console.log(`You withdraw => ${Math.abs(diposit)}`); // math.abs -sign ko remove krta hia direct value show krenga
+
+            }
+        }
+
+        console.log('---------------*****---------------');
+        arr.forEach(
+            function(diposit){
+                if (diposit > 0){
+                console.log(`you diposite =>${diposit}`);
+            }else{
+                console.log(`You withdraw => ${Math.abs(diposit)}`); // math.abs -sign ko remove krta hia direct value show krenga
+
+            }
+            }
+        );
+    </script>
+</body>
+</html>

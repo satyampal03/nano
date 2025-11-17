@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET-Birth's Data from an array</title>
+</head>
+<body>
+    <script>
+
+        let yr = [2003,2008,2002,1991,2000];
+
+
+        let newAge = []; 
+
+        for(x = 0; x <= yr.length-1; x++){
+            age = (-yr[x]+2025);
+            newAge.push(age);
+
+            console.log(`${x} -> ${yr[x]} -----> ${age}`);
+
+        }
+
+        console.log(newAge);
+    </script>
+</body>
+</html>

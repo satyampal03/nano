@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        
+        .box{
+            background-color: aqua;
+
+            margin:40px;
+        }
+
+        .box1{
+            border: 1px solid;
+            color: red;
+            margin: 60px;
+
+            padding: 20px;
+
+            width:800px ;
+            box-sizing: border-box;
+
+        }
+        .box2{
+            background-color: rgb(159, 46, 46);
+            color:white;
+            border: 5px double black;
+            margin: 50px; /* margin will we collaps if we use the margin to blocks,, it will take the max margin use ho jayegi agar 2 block ki margin overlapps ho rhi hai to*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque molestias suscipit odit repellat porro possimus eos quam laborum sed, sequi explicabo provident quaerat est deserunt quasi dolor id, fugia t architecto eligendi aperiam atque. Nam magni a facere velit impedit architecto voluptate officia cumque consectetur illum. Veniam voluptatibus voluptas magnam.</div> 
+    <div class="box box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque molestias suscipit odit repellat porro possimus eos quam laborum sed, sequi explicabo provident quaerat est deserunt quasi dolor id, fugia t architecto eligendi aperiam atque. Nam magni a facere velit impedit architecto voluptate officia cumque consectetur illum. Veniam voluptatibus voluptas magnam.</div>
+    
+
+    <script>
+        let para = document.querySelector('p').innerHTML;
+
+        console.log(para);
+    </script>
+</body>
+</html>

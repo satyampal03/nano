@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: var( --main-bg-color);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       :root{
+        --main-color : rgb(0, 102, 255);
+        --font-color:white ;
+        --main-bg-color:rgb(125, 159, 223);
+        --box-bg-color:rgb(161, 176, 202);
+        
+       }
+
+       nav{
+            box-shadow: 0px  0px 20px  blue;
+
+            position: sticky;
+            top :0px;
+
+        
+       }
+        ul{
+            background-color: var(--main-color);
+
+        }
+                
+        ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 20px;  
+            font-family: cursive;
+            font-weight: bold;
+            color: var(--font-color);
+            font-size: 20px;
+    }
+        ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 20px;  
+            font-family: cursive;
+            font-weight: bold;
+            color: var(--font-color);
+            font-size: 20px;
+            text-shadow: 1px  1px 20px  rgb(255, 255, 255);
+
+
+        }
+
+        .container{
+            height: 400px;
+            width: 90vw;
+            margin:5vw;
+            padding: 8px;
+            background-color: var(--box-bg-color);
+            display: flex;
+            border-radius: 10px;
+
+
+        }
+        .box{
+            display: inline;
+            margin: 20px 25px ;
+            background-color:var(--main-color) ;
+            height:90% ;
+            width:50% ;
+            border-radius: 15px;
+            
+            
+        }
+                .box:hover{
+            display: inline;
+            margin: 20px 25px ;
+            background-color:var(--main-color) ;
+            height:90% ;
+            width:50% ;
+            border-radius: 15px;
+            box-shadow: 0px  0px 20px  rgb(228, 228, 228);
+            
+            
+        }
+
+        .text-box{
+            background-color: var(--box-bg-color);
+            color: var(--font-color);
+            font-family: cursive;
+            margin: 5vw;
+            padding: 40px;
+            border-radius: 15px;
+
+        }
+                .text-box:hover{
+            background-color: var(--box-bg-color);
+            color: var(--font-color);
+            font-family: cursive;
+            margin: 5vw;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 1px  1px 20px  rgb(228, 228, 228);
+
+        }
+
+        footer{
+            background-color: var(--box-bg-color);
+            padding: 20px 40px ;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: var(--font-color);
+            height: 200px;
+        }
+
+        h3{
+            font-size: 40px;
+            text-align: center;
+            color: var(--main-color);
+            
+            text-shadow: 1px  1px 20px  rgb(255, 255, 255);
+
+        }
+
+        .click-top{
+            /* display: flex; */
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+
+            
+        }
+        img{
+            border-radius: 60px;
+            }   
+
+        img:hover{
+            border-radius: 60px;
+            box-shadow: 1px  1px 20px  rgb(228, 228, 228);
+                    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="box box1"></div>
+        <div class=" box box2"></div>
+    </div>
+
+    <div class="text-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus, deleniti error laboriosam optio incidunt voluptas provident fugiat voluptatum ea non culpa, libero ducimus quia rem qui alias nihil earum magnam. Dolor omnis molestiae temporibus repellendus, libero distinctio unde rerum quisquam placeat impedit totam vel autem dignissimos eius minima, amet at perferendis. Suscipit aut unde beatae aliquid sit? Eveniet, sint eius excepturi quia doloribus dolor natus. Ea repudiandae illum impedit quod aliquam! Magnam ipsam tempora cumque sed laboriosam eius voluptate sequi, ut, eaque iusto culpa nemo error natus consequuntur. Eius, recusandae maxime amet modi voluptatum incidunt eligendi! Praesentium laboriosam fugiat incidunt animi? Deserunt distinctio dignissimos, deleniti autem voluptates architecto velit, dolorum ratione alias error et sed, qui maxime dolores itaque quasi molestiae! Similique molestiae obcaecati, perspiciatis ipsa quia minima! Atque, odit. Sed explicabo, et perferendis atque in, corporis sequi harum dolorum iure ut vel quod voluptate debitis hic tempora earum!
+    </div>
+
+    <div class="click-top">
+        <img src="img/top.png" alt="not found image">
+    </div>
+
+    <footer>
+        <h3>This is the Footer</h3>
+    </footer>
+</body>
+</html>

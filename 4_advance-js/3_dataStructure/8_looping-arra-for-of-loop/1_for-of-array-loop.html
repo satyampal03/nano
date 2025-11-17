@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                const restaurant = {
+            name: "Classico Italiano",
+            location: "Via Angelo Tavanti 23, Firenze, Italy",
+            categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+            starterMenu: ["Focaccia","Bruschetta","Garlic Bread","Caprese Salad",],
+            mainMenu: ["Pizza", "Pasta", "Risotto"],
+        };
+
+        const menu = [...restaurant.starterMenu, ...restaurant.mainMenu]; // with spread operator
+
+        for(const item of menu ){
+            console.log(item);
+        }
+        for(const item of menu.entries() ){ // array is itratable 
+            console.log(item);
+        }
+
+         for (let [i, el] of menu.entries()){
+            console.log(i+1, el); // there is i => index of every Element of array, and el is the main intities that are inside the array 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Backwards and Nested  loop in js</title>
+</head>
+<body>
+    <script>
+
+        // reversing the ages value in arr
+
+        
+        let yr = [2003,2008,2002,1991,2000];
+
+
+        let newAge = []; 
+
+        for( x = yr.length-1; x >= 0; x--){
+            age = (-yr[x]+2025);
+            newAge.push(age);
+
+            console.log(`${x} -> ${yr[x]} -----> ${age}`);
+
+        }
+
+        console.log(newAge);
+
+
+        // nested means that loop will inside the loop
+
+    </script>
+</body>
+</html>

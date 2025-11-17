@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>and operator</title>
+</head>
+<body>
+    <script>
+        console.log("x" && "y"); // y
+        console.log(0 && "johan"); // 0
+        console.log(7 && "johan"); // johan
+        console.log('Hello' && 23 && null && "johan"); // null
+
+        console.log(  '' && 0 && NaN  && null  &&  undefined); // empty [ all falsy values are false]~ Always
+
+
+    </script>
+</body>
+</html>

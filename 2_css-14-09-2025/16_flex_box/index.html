@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Flexbox</title>
+        <style>
+
+            .container{
+                height: auto;
+                border: 1px solid red;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: row;
+                background-color: rgb(242, 121, 121);
+                box-shadow: 3px 3px 4px rgb(173, 95, 95) ;
+
+                flex-direction: row-reverse;
+                
+            }.container:hover{
+                height: auto;
+                border: 1px solid red;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: row;
+                background-color: rgb(242, 121, 121);
+                box-shadow: 3px 1px 3px rgb(173, 95, 95) ;
+
+                flex-direction: row-reverse;
+            }
+                
+                
+
+
+            
+            .item{
+                height: 50px;
+                width: 100px;
+                /* padding: 4px 6px; */
+                margin: 30px;
+                /* align-items: center;
+                justify-content: center; */
+                border: 2px rgb(242, 121, 121);
+                border-radius:30px;
+                box-shadow: 3px 1px 3px rgb(173, 95, 95) ;
+                text-align: center;
+                align-items: center;
+            }
+            .item:hover{
+                height: 50px;
+                width: 100px;
+                /* padding: 4px 6px; */
+                margin: 30px;
+                /* align-items: center;
+                justify-content: center; */
+                border: 2px rgb(242, 121, 121);
+                border-radius:30px;
+                box-shadow: 3px 3px 4px rgb(173, 95, 95) ;
+                text-align: center;
+                align-items: center;
+            }
+
+            .item1{
+                flex-grow: 50px;
+                display: inline-block;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item item1">Home </div>
+            <div class="item">About Us</div>
+            <div class="item">Contact Us</div>
+            <div class="item">History </div>
+            <div class="item">Services</div>
+        </div>
+    </body>
+    </html>

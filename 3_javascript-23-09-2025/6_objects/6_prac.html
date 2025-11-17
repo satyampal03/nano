@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /* Write your code below. Good luck! 🙂 */
+    
+    
+    const mark = {
+        fullName:'mark ',
+        mass :78,
+        height:1.95,
+        
+        calcBMI:function(){
+            
+            // BMI = mass / (height * height)
+            return (this.bmi = this.mass/(this.height*this.height));
+            
+        }
+        
+    }    
+    
+    
+    const john = {
+        fullName:'john ',
+        mass :92,
+        height : 1.95,
+        
+     calcBMI:function(){
+            
+            // BMI = mass / (height * height)
+             return (this.bmi = this.mass/(this.height*this.height));
+           
+    }
+    
+    }
+    
+    const mark_bmi = mark.calcBMI();
+    
+    const john_bmi = john.calcBMI();
+    
+    if(mark_bmi < john_bmi){
+        console.log(`${john.fullName}'s BMI  is ${john_bmi}  higher than ${mark.fullName}'s BMI ${mark_bmi}!`)
+    }else{
+        console.log(`${mark.fullName}'s BMI  is ${mark_bmi} higher than ${john.fullName}'s BMI  ${john_bmi}!`)
+    }
+    
+    
+    
+    
+
+</script>
+</body>
+</html>

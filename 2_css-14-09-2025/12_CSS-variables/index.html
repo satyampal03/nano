@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+/* css variables  */
+       :root{  /* Global variables in css  */
+            --color :red;
+            --on_hover:lightgreen;
+            --bg-color:rgb(79, 171, 171);
+        }
+
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        ul{
+            background-color: var(--bg-color);
+            height: 10vh;
+
+            width: 100vw;
+            display: flex;
+        }
+        ul li{  
+            display: block;
+            margin: 30px;
+            text-align: center;
+            align-items: center;
+            justify-content: end;
+            text-decoration: none;
+            padding: 0px 10px ;
+        }
+
+        p{
+            --color :rgb(114, 132, 137); /*Local Variables*/
+            margin-top: 30px;
+            padding: 20px;
+             background-color : var(--color, red); /*if the color is not availble then red will color will work*/
+
+        }   
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home </li>
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Contact Us</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis adipisci assumenda sit quidem, odit fugit nobis cumque praesentium quasi nemo sequi iusto ipsum exercitationem nulla veniam. Ipsa officia nisi accusamus.</p>
+</body>
+</html>

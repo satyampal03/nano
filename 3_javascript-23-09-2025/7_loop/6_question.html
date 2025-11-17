@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate the bill</title>
+</head>
+
+<body>
+    <script>
+
+        /* Write your code below. Good luck! 🙂 */
+
+
+
+        const calcTip = function (bill) {
+            return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+        }
+        // agr 50-300 to 15%, tip else 20%
+
+
+        let tips = []; // this section is only for the tip values
+
+        let totals = []; // this arr section it the for tip and actual values SUM
+
+
+        let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]; //these are the random bills inside the arrray
+
+       
+
+
+        for (let i = 0; i <= bills.length-1; i++) {
+
+            let bill = bills[i];
+
+             tips.push(calcTip(bill));
+
+
+             totals.push(bill + calcTip(bill) );
+
+          //  console.log(calcTip(bill)); // we are able to get the value here
+
+            
+        }
+
+
+        console.log(totals);
+
+        console.log(tips); //
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar (Flexbox)</title>
+    <script src="https://kit.fontawesome.com/2cc405727a.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav{
+            display: flex;
+            height: 50px;
+            background-color: rgb(234, 229, 229);
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 40px 0px 120px ;
+            
+        }
+
+        ul li{
+            display: inline-block;
+            padding: 10px 15px;
+            margin-right: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 450;
+
+        }
+
+        
+        ul li:hover{
+            display: inline-block;
+            padding: 10px 15px;
+            margin-right: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 450;
+            box-shadow: 1px 4px 2px  rgb(181, 179, 179) inset;
+            border-radius: 30px;
+            text-shadow:1px 1px 3px gray ;
+
+        }
+
+        .logo{
+            justify-content: center;
+            border-radius: 30px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: medium;
+        }
+
+        .fa-solid{
+            font-size: 12px;
+        }   
+
+        
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="#"><img src="img/top.png" alt="not available" class="logo" height="40px" width="40px"></a>
+        
+        <ul>
+            <li><a href="#">Home <i class="fa-solid fa-chevron-down fa-main"></i></a></li>
+            <li><a href="#">About Us <i class="fa-solid fa-chevron-down fa-main"></i></a></i></li>
+            <li><a href="#">Services <i class="fa-solid fa-chevron-down fa-main"></i></a></i></li>
+            <li><a href="#">Pricing <i class="fa-solid fa-chevron-down fa-main"></i></a></li>
+            <li><a href="#">Contat Us <i class="fa-solid fa-chevron-down fa-main"></i></a></li>
+        </ul>
+    </nav>
+</body>
+</html>

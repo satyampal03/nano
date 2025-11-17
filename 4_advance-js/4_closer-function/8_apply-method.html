@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>apply methods in js?</title>
+  </head>
+  <body>
+    <script>
+
+        // ye 1st function hai
+
+      const person = {
+        name: "Alice",
+        greet: function (greeting, punctuation) {
+          console.log(`${greeting}, ${this.name}${punctuation}`);
+        },
+      };
+
+      // another function hai
+      const anotherPerson = {
+        name: "Bob",
+      };
+
+      person.greet.apply(anotherPerson, ["Hello", "!"]); // Output: Hello, Bob! 
+    </script>
+  </body>
+</html>

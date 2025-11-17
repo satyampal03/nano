@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data-Structure</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+      //  => Distructure -> 
+
+
+      const restaurant = {
+        name: "Classico Italiano",
+        location: "Via Angelo Tavanti 23, Firenze, Italy",
+        categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+        starterMenu: ["Focaccia","Bruschetta","Garlic Bread","Caprese Salad",],
+        mainMenu: ["Pizza", "Pasta", "Risotto"],
+      };
+
+      const arr = [2, 3, 4];
+      const a = arr[0];
+      const b = arr[1];
+      const c = arr[2];
+
+      const colors = ["red", "green", "blue"];
+
+
+      // Destructuring the array
+      const [firstColor, secondColor, thirdColor] = colors;  // diustructrue =>
+      // Output: "red"
+
+      console.log(firstColor); // red
+
+
+      const [phela, dusha, teesha ] = restaurant.mainMenu;
+
+      console.log(phela);
+
+      console.log(restaurant.mainMenu[1]); //  Pasta) pasta this is the old way then don't use it
+
+      console.log(phela, dusha); //  we will get here the  Pizza", "Pasta"
+      // Const [a, b, c] = arr; //
+
+      // console.log(x, y, z);
+    </script>
+  </body>
+</html>

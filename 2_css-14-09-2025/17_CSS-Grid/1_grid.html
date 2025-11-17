@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .container{
+            height :auto;
+            border: 1px solid;
+            display: grid;
+            /* grid:auto/ 20px 30px auto 90px;  */
+            grid-template-columns:auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+        }
+        .box{
+            height:200px;
+        width: 175px;
+        background-color: rgb(148, 127, 127);
+        border: 1px solid green;
+        margin: 50px;
+        padding: 20px;
+
+           }
+           .box3{
+            grid-column: 3/6;
+            grid-row: 1/2; /* after using both of properties we can directly align a box*/
+            
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" >1</div>
+        <div class="box">2</div>
+         <div class="box box3">maihu</div>
+         <div class="box">4</div>        
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>        
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>        
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+        <div class="box">17</div>
+        <div class="box">18</div>        
+        <div class="box">19</div>
+        <div class="box">20</div>
+        <div class="box">21</div>
+        <div class="box">22</div>        
+        <div class="box">23</div>
+        <div class="box">24</div>
+        <div class="box">25</div>
+        <div class="box">26</div>
+        <div class="box">27</div>
+        <div class="box">28</div>
+        <div class="box">29</div>
+        <div class="box">30</div>
+    </div>
+</body>
+</html>

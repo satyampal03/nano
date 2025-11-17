@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition Property </title>
+    <style>
+        .container{
+            height: 600px;
+            width: 90vw;
+            background-color: aqua;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+
+
+        .move-box{
+            transform: translate(500px , 50px);
+            border-radius: 10px;    
+            text-align: center;
+
+            /* transition-property:transform;
+
+            transition-duration: 3s;
+            
+            transition-timing-function:ease-in-out;
+
+             transition-delay:1s; 
+             
+             first will be transition property > duration> timing-function> delay*/
+
+            transition: transform 3s ease-in-out 1s;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box move-box"> this is me</div>
+        </div>
+</body>
+</html>

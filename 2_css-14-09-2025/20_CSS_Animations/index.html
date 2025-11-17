@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 90vw;
+            background-color: rgb(133, 133, 193);
+            display: flex;
+            justify-content: flex-start;
+            align-items: end;
+
+
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: #efe9e9;
+            border-radius: 50px;
+
+            box-shadow: 3px 40px 50px white;
+
+            /* animation -----  */
+
+            animation-name:animation-1; /*name of animation, you can give anything*/ 
+            animation-duration:10s; /* duration of animation to be complete*/
+            animation-iteration-count: infinite; /* itrate the animation it 5 times*/
+            animation-timing-function:inline; /* animation speed controll */
+            /* animation-delay: 0s; delay will stop to be animation */
+            animation-direction: reverse;
+
+        }
+
+
+
+        @keyframes animation-1 {
+            0%{
+                
+            }
+            50%{
+                transform: translate(450px, -250px);
+                background-color: rgb(234, 227, 227);
+                box-shadow: 3px 4px 50px rgb(255, 255, 255);
+
+
+            }
+            100%{
+                transform: translate(900px,0px );
+                
+                background-color: rgb(210, 187, 9);
+            box-shadow: 3px 4px 50px rgb(225, 225, 34);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

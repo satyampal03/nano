@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav- Creation</title>
+    <script src="https://kit.fontawesome.com/2cc405727a.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: rgb(255, 255, 255); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+        }
+        .logo{
+            display: flex;
+            width: 250px;
+            align-items: center;
+
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 0px 30px;
+            font-family: Segoe UI;
+        }
+
+        .image{
+            border-radius:15px ;
+        }
+
+
+        .logo-text{
+
+                padding: 0px 15px;
+                font-family: Segoe UI;
+
+
+        }
+       .logo-content-text{  
+        font-size: 10px;
+          place-content: end;
+
+       }
+       .fa-main{
+        font-size: 10px;
+       }
+
+
+       .container{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+       }
+
+       .details-head{
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+            background-color: rgb(216, 211, 203);
+           
+
+       }
+       .container_cells{
+            display: grid;
+            justify-content: center;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            gap: 15px;
+            margin-top: 15px;
+
+       }
+
+       .cell{
+        display: grid;
+        height: 200px;
+        width: 300px;
+        background-color: rgb(244, 242, 240);
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+       }
+
+
+       .btns{
+            display: flex;
+            padding: 30px;
+            height: 30px;
+            width: 70px;
+            gap: 10px;
+        
+       }
+
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="img/top.png" class="image" alt="logo not fount" height="60" width="60" >
+            <div class="logo-text">
+                <h3 class="logo-content logo-content-main">UltraEdit</h3>
+                <p class="logo-content-text"> By Embarcardero</p>
+            </div>
+            
+
+        </div>
+        <ul class="menue">
+            <li>Products <i class="fa-solid fa-chevron-down fa-main"></i></li>
+            <li>Pricing <i class="fa-solid fa-chevron-down fa-main"></i></li>
+            <li>Resources <i class="fa-solid fa-chevron-down fa-main"></i></li>
+            <li>About Us <i class="fa-solid fa-chevron-down fa-main"></i></li>
+            <i class="fa-solid fa-language"></i>
+        </ul>
+    </nav>
+
+    <div class="container">
+            <div class="details-head">
+                <img src="img/top.png" class="image image-align"  alt="not availble" height="60" width="60">
+                <h3>Download UltraEdit </h3>
+                <P >v2023.1(released 08/16/2023) | Hotfix</P>
+            </div>
+            <div class="container_cells">
+                <div class="cell">
+                    <h3>English</h3>
+                    <p>English</p>
+                    <div class="btns">
+                        <button>Download 32-Bit</button>
+                        <button>Download 64-Bit</button>
+                    </div>
+                </div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+    </div>
+</body>
+</html>

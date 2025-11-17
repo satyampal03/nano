@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call-method: - To call a function inside of a object</title>
+</head>
+<body>
+
+
+    <script>
+        const anotherObject = {
+  name: "Another Object"
+};
+
+function greet(message) {
+  console.log(`${message}, ${this.name}`);
+}
+
+greet.call(anotherObject, "Hi");
+// Output: Hi, Another Object
+
+    </script>
+    
+</body>
+</html>

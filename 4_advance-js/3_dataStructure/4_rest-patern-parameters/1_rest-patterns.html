@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Patterns</title>
+</head>
+<body>
+    <script>
+
+        "use strict";
+        // Rest pattern is used to collect the remaining elements into an array
+        const arr = [1, 2, 3, 4, 5,45,56,56,43,65,76,54,65,65,65,7676,7,65,65,7,67,65,8];
+
+        const [a, , , , ...x] = arr; // here ... is rest operator
+        // console.log(a, b);  // it will provide all the elem of the arrat `[1, 2, 3, 4, 5]`
+        console.log(x); // we will get here [3, 4, 5] because ...x is rest pattern and it will collect all the remaining elements into an array
+
+        // const [a, , , , ...x]  comma's are used to skip the elements in the array 
+    </script>
+</body>
+</html>

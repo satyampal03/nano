@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manipulation</title>
+    <style>
+        .btn{
+                height: 38px;
+                width: 120px;
+                border:none;
+                background-color: rgb(197, 86, 86);
+                color: rgb(255, 255, 255);
+                margin: 40px 200px;
+                border-radius: 20px;
+                /* box-shadow: 1px 2px 5    px lightcyan; */
+
+                
+        }
+                .btn:hover{
+                height: 40px;
+                width: 120px;
+                border:none;
+                background-color: rgb(255, 0, 0);
+                color: rgb(255, 255, 255);
+                margin: 40px 200px;
+                border-radius: 20px;
+                box-shadow: 1px 2px 5px rgb(223, 93, 93);
+        }
+
+        .dark{
+            background-color: rgb(123, 178, 90);
+        }
+                .btn2{
+                height: 38px;
+                width: 120px;
+                border:none;
+                background-color: rgb(197, 200, 4);
+                color: rgb(255, 255, 255);
+                margin: 40px 200px;
+                border-radius: 20px;
+                /* box-shadow: 1px 2px 5    px lightcyan; */
+
+                
+        }
+
+        .btn2:hover{
+                height: 40px;
+                width: 120px;
+                border:none;
+                background-color: rgb(255, 0, 0);
+                color: rgb(255, 255, 255);
+                margin: 40px 200px;
+                border-radius: 20px;
+                box-shadow: 1px 2px 5px rgb(223, 93, 93);
+        }
+
+        .container{
+            height: 400px;
+            width: 600px;
+            background-color: lightgreen;
+            border: 1px solid white;
+            border-top-right-radius: 20px;
+            position: absolute;
+            margin:auto  300px ;
+            /* padding: auto; */
+
+            box-shadow: 20px 30px 40px rgba(rgb(255, 255, 255), rgb(255, 255, 255), rgb(248, 248, 248), 50px);
+
+            display: flex;
+            justify-content: right;
+            align-items: start;
+        }   
+
+
+        .hide{
+            display: none;
+        }
+
+
+
+        .closeIcon{
+            border-radius: 10px;
+            height: 40px;
+            width: 70px;
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            /* align-self: center; */
+            justify-content: center;
+            align-items: center;  
+            cursor: pointer;  
+        }
+    </style>
+</head>
+<body class="dark">
+    <button class="btn">Dark Mode</button>
+    <button class="btn2 ">Open Me</button>
+
+    <div class="container hide">
+        <div class="closeIcon">Close</div>
+    </div>
+
+    <script>
+
+
+
+        let body = document.body;
+        let button = document.querySelector('.btn');
+
+        button.addEventListener('click', function(){   
+          body.classList.toggle("dark");
+        })
+
+        let btn2 = document.querySelector(".btn2");
+        
+        let container = document.querySelector(".container");
+
+        btn2.addEventListener('click', function(e){
+
+        container.classList.remove('hide');
+
+        })
+
+        let closeIcon = document.querySelector('.closeIcon');
+
+       
+            closeIcon.addEventListener('click', function(e){
+
+            container.classList.add('hide');
+
+            console.log('e => ', e.key)
+
+            })
+
+
+    </script>
+
+</body>
+</html>

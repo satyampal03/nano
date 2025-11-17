@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Optional-Chaining</title>
+  </head>
+  <body>
+    <script>
+      const user = {
+        name: "Alice",
+        address: {
+          street: "123 Main St",
+          city: "Anytown",
+        },
+      };
+
+      const street = user?.address?.street; // "123 Main St"
+      const zipCode = user?.address?.zipCode; // undefined (no error)
+
+      console.log(zipCode, street);
+
+      const invalidUser = null;
+      const invalidStreet = invalidUser?.address?.street; // undefined (no error)
+
+        console.log(user.address?.city);
+
+
+
+        let days = ['Monday', 'Tuesday', 'Wednesday','Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+
+        for(let day of days){
+            console.log(day); // 
+        }
+    </script>
+  </body>
+</html>

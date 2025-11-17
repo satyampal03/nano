@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object-litrals</title>
+  </head>
+  <body>
+    <script>
+      const restaurant = {
+        name: "Classico Italiano",
+        location: "Via Angelo Tavanti 23, Firenze, Italy",
+        categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+        starterMenu: [
+          "Focaccia",
+          "Bruschetta",
+          "Garlic Bread",
+          "Caprese Salad",
+        ],
+        mainMenu: ["Pizza", "Pasta", "Risotto"],
+        openingHour: {
+          thu: {
+            open: 12,
+            close: 22,
+          },
+
+          fri: {
+            open: 11,
+            close: 23,
+          },
+
+          sat: {
+            open: 0, // Open 24 hours
+            close: 24,
+          },
+        },
+      };
+
+      const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+
+      for (const day of days) {
+        const open = restaurant.openingHours[days]?.open;
+        console.log(`On ${days}, we open at ${open}`);
+      }
+      
+    </script>
+  </body>
+</html>

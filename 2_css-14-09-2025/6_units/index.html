@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units - px, rem, em, vh, vw, % & more |</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: aqua;
+            color: blue;
+            font-family: cursive;
+             width: 70vw; /*viewport width*/
+             margin: 23px auto;     
+            height: 100vh;
+            
+        }
+        .main{
+             width: 100vmin; /* 80% of the smaller viewport dimension */
+        height: 120vmin;
+        }
+
+    </style>
+
+</head>
+<body>
+        <div class="box">
+            <p>Hii, Dear</p>
+            <h1>On the far couch, Sentinel sits hunched, elbows on knees, spine shaped like a question mark. No wedding ring. No nervous fidget, either. Just tremor, clockwork and incurable. Mara makes a note on herhad his face on the fridge. Now...</h1>
+        </div>
+                <div class="box">
+            <p>Hii, Dear</p>
+            <h1 class="main">On the far couch, Sentinel sits hunched, elbows on knees, spine shaped like a question mark. No wedding ring. No nervous fidget, either. Just tremor, clockwork and incurable. Mara makes a note on her tablet: “minimize closeups.” They’d rolled out the promo campaign last week: “A Night With Sentinel—An Icon Returns.” Hashtag: #FirstAmongUs. Old newsreel cuts, drones screaming over city skylines, the slow-motion shot of Sentinel punching through the river wall at Carthage. Twenty years ago, every other apartment had his face on the fridge. Now...</h1>
+        </div>
+</body>
+</html>

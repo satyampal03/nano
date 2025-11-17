@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested array distructuring</title>
+</head>
+<body>
+    <script>
+        "use strict";
+    
+        const restaurant = {
+            name: "Classico Italiano",
+            location: "Via Angelo Tavanti 23, Firenze, Italy",
+            categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+            starterMenu: ["Focaccia","Bruschetta","Garlic Bread","Caprese Salad",],
+            mainMenu: ["Pizza", "Pasta", "Risotto"],
+        };
+
+        const nestedArray =  [1, 2, [3, 3.5],4];
+
+        const [i,o, [p,q],j] = nestedArray;
+        console.log(i,o,p,q,j); // we will get here 1, 2, 3, 3.5, 4
+
+    </script>
+</body>
+</html>

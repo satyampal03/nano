@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            height:60vh;
+            width: 80vw;
+            border: 1px solid black;
+            margin:10px;
+            padding:30px;
+        }
+
+        .box1{
+            background-color: aqua;
+            position: sticky;  /* default position is static*/ 
+            top: 1px;
+            width: 80vw;
+            height: 10vh;
+
+        }      
+.box1 ul {
+            display: flex;
+            list-style: none;
+            margin: 10px;
+            /* padding: 50px; */
+            background-color: rgb(240, 240, 240);
+            justify-content: end;
+            font-family: cursive;
+            /* font-style: italic; */
+            border-radius: 30px;
+            padding: 0px 40px;
+            box-shadow: 20px 30px 40px rgb(228, 226, 226);
+        }
+        .box1 ul li {
+            display: inline-block;
+            padding: 20px;
+            margin: 20px;
+
+        }
+        .box2{
+            background-color: rgb(255, 0, 0);
+                position: relative;  /*block will move but space will not accoupy by other elem*/
+
+                top: 40px;
+                left :40px;
+
+                z-index: -1;
+        }        
+        .box3{
+            background-color: rgb(64, 255, 0);
+        }        
+        .box4{
+            background-color: rgb(5, 172, 36);
+            position: fixed; /*block will fix */
+            height: 10px;
+            width: 20px;
+            border: 1px solid ;
+            border-radius: 30px;
+
+            right: 30px;
+            bottom: 20px;
+        }        
+        .box5{
+            background-color: rgb(99, 112, 1);
+            position:absolute; /* block will move and space will accupy by other elem and finds the nearest position who is positioned*/ 
+        }
+
+
+        .mainbox{
+            border: 1px solid red;
+            margin:30px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+          <div class="box box1">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Locations</li>
+                <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="box box2"></div>
+          <div class="box box3"></div>
+          <div class="box box4"></div>
+          <div class="box box5"></div>
+    </div>      
+</body>
+</html>

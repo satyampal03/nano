@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+
+
+      const obj = {
+        airline: "Lufthansa",
+        iataCode: "LH",
+        bookings: [],
+        book(flightNum, name) {
+          console.log(
+            `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+          );
+          this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
+        },
+      };
+
+      obj.book(239, 'Jonas');
+      obj.book(345, 'sachin');
+      obj.book(984, 'mohit');
+      obj.book(349, 'Jonas');
+      obj.book(4874, 'Mike Smith');
+
+    </script>
+  </body>
+</html>

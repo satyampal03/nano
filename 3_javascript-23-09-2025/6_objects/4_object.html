@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects in js?</title>
+</head>
+<body>
+    <script>
+        // objects can hold multy types of the data-> it's depending on you what you want to store the data please choose it as you want that all the things
+
+        // Example-- 
+
+        const dummyObj = {
+            firstName: 'rajesh',
+            height:'4fit',
+            birthYr:2007,
+            job:"teacher",
+            hasDriversLicense:true,
+            friends: ['ramesh', 'kallu', 'mohit'],
+            age: function () {
+                this.ummr = 2025 - this.birthYr;
+                return   this.ummr ;
+            },
+
+            getSummerry: function(){
+                return `${this.firstName} is a ${this.age()} year old ${this.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+            }
+        };
+
+
+        console.log(dummyObj.age());
+        console.log(dummyObj.getSummerry());
+
+
+        
+    </script>
+</body>
+</html>

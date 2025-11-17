@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>set Methods</title>
+  </head>
+  <body>
+    <script>
+      // set methods
+
+      italianFoods = new Set([
+        "pasta",
+        "gnocchi",
+        "tomatoes",
+        "garlic",
+        "olive oil",
+        "basil",
+      ]);
+      mexicanFoods = new Set([
+        "tortilla",
+        "beans",
+        "tomatoes",
+        "garlic",
+        "avocado",
+        "cilantro",
+      ]);
+
+
+       // to find the same intities inside the both set list  (intersection -method)
+
+        const common_food = new Set (italianFoods.intersection(mexicanFoods));
+
+
+        console.log('Common Food :-' , common_food); // this will  show the list data of set value
+        console.log(...common_food); // this will show all the values only not the set list data,
+
+
+        // to get the except common values (do not count the duplicates ),
+
+
+        const unionSetValues = new Set (mexicanFoods.union(italianFoods)); //  only give us the main values do not gives us duplicates values form the bith set list data (from this list there will  not any duplicacy in this filtered datalist)
+
+        console.log(unionSetValues); 
+
+        console.log(...unionSetValues);
+
+        // get the difference values from the data set list 
+
+        const diffValuesInmexicanFoods = new Set(mexicanFoods.difference(italianFoods));
+
+        console.log(...diffValuesInmexicanFoods); // will gives us the main values (give us here unpacked values from an array) 
+        console.log(diffValuesInmexicanFoods); // will gives the values in the new set
+ 
+    </script>
+  </body>
+</html>

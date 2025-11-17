@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closer function </title>
+</head>
+<body>
+    <script>
+        let flight = 'LSDJ68';
+        let person = {
+            fullName : 'Satyam',
+            age :20
+        }
+
+
+        const checkIn = function(passanger, flight){
+            
+            passanger.fullName = 'Satyam Pal';
+
+            flight  = 'LSDJ68';
+
+            if(flight === 'LSDJ68'){
+                alert('You can get-flight');
+            }else{
+                alert("you can't get flight");
+            }
+
+        }
+
+        checkIn(person, flight);
+
+        console.log(flight, person);
+    </script>
+</body>
+</html>

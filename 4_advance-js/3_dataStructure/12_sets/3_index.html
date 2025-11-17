@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set in array</title>
+</head>
+<body>
+
+    <script>
+        const arr = ['ramab',
+            'bhanu',
+            'shayana',
+            'mahi',
+            'jitu',
+            'mohit'
+        ];
+
+        // if we want to put this arr's value into the set then also we can do this all,
+
+
+        const setArr = new Set(arr); // this is now a set list data
+        console.log(setArr);
+
+
+        const x = [...new Set(arr)]; 
+
+        console.log(x); // this is now conveting the all set list data into only the array list
+
+
+        console.log(setArr.size); // will 5
+
+    </script>
+    
+</body>
+</html>

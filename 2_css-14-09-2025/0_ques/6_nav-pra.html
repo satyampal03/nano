@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav- Creation</title>
+    <script src="https://kit.fontawesome.com/2cc405727a.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: rgb(255, 255, 255); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+        }
+        .logo{
+            display: flex;
+            width: 250px;
+            align-items: center;
+
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 0px 30px;
+            font-family: Segoe UI;
+        }
+
+        .image{
+            border-radius:15px ;
+        }
+
+
+        .logo-text{
+
+                padding: 0px 15px;
+                font-family: Segoe UI;
+
+
+        }
+       .logo-content-text{  
+        font-size: 10px;
+          place-content: end;
+
+       }
+       .fa-main{
+        font-size: 10px;
+       }
+
+       
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="img/top.png" class="image" alt="logo not fount" height="60" width="60" >
+            <div class="logo-text">
+                <h3 class="logo-content logo-content-main">UltraEdit</h3>
+                <p class="logo-content-text"> By Embarcardero</p>
+            </div>
+            
+
+        </div>
+        <ul class="menue">
+            <li>Products <i class="fa-solid fa-chevron-down fa-main"></i></li>
+            <li>Pricing <i class="fa-solid fa-chevron-down fa-main"></i></li>
+            <li>Resources <i class="fa-solid fa-chevron-down fa-main"></i></li>
+            <li>About Us <i class="fa-solid fa-chevron-down fa-main"></i></li>
+            <i class="fa-solid fa-language"></i>
+        </ul>
+    </nav>
+</body>
+</html>

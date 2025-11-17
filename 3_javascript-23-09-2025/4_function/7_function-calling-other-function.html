@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Calling Other Functions</title>
+</head>
+<body>
+    <script>
+
+        function cutFruitPieces(fruit) {
+            return fruit * 4;
+        }
+        function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+    return juice;
+    }
+
+fruitProcessor(3,5);
+
+
+        // function fruitkepieces(x){
+        //     return x*10;
+        // }
+
+        // function machine(apple, orange){
+        //     const applekepieces =  fruitkepieces(apple);
+        //     const orangekepeices =  fruitkepieces(orange);
+
+        //     let juice = machine(applekepieces orangekepeices);
+
+        // console.log(juice);
+
+        // }
+
+        
+
+    </script>
+</body>
+</html>

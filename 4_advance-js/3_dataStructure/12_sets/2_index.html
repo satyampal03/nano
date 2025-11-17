@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set - arr list</title>
+</head>
+<body>
+    <script>
+        const setList = new Set([
+            'raman',
+            'aman',
+            'chaman',
+            'ravan',
+            'shayam'
+        ])
+
+
+        console.log( setList);
+        console.log(setList.add('bhalu-Animal')); // to add new values inside the set
+
+        console.log(setList.delete('raman')); // to delete
+
+        console.log(setList.clear(setList)); // if we want empty all the values inside the set, 
+
+        for(const nameList of setList)  console.log(nameList); 
+ 
+        
+        // console.log(nameList);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bind-Method:</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: "Alice",
+        greet: function () {
+          console.log(`Hello, my name is ${this.name}`);
+        },
+      };
+
+      const unboundGreet = person.greet;
+      unboundGreet(); // Output: Hello, my name is undefined (this refers to global object)
+
+      const boundGreet = person.greet.bind(person);
+      boundGreet(); // Output: Hello, my name is Alice (this is bound to 'person')
+
+      
+    </script>
+  </body>
+</html>

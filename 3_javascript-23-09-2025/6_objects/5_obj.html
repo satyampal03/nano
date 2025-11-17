@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const dummyObj = {
+            firstName: 'rajesh',
+            height:'4fit',
+            birthYr:2007,
+            job:"teacher",
+            hasDriversLicense:true,
+            friends: ['ramesh', 'kallu', 'mohit'],
+            age: function () {
+                this.ummr = 2025 - this.birthYr;
+                return   this.ummr ;
+            },
+
+            getSummerry: function(){
+                return `${this.firstName} is a ${this.age()} year old ${this.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+            }
+        };
+
+        console.log(dummyObj);
+
+       dummyObj["email"] = "coder@example.com";
+        console.log(dummyObj);
+    </script>
+</body>
+</html>

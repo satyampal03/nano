@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call and Apply Method in Object</title>
+  </head>
+  <body>
+    <script>
+      /*
+        let bookingSystem  = {
+            flightName : 'Indigo',
+            flightNum : 'R49HJ',
+            ticketinfo(name, passangerNum){
+                console.log(`${name} -${passangerNum} - ${this.flightName} - ${this.flightNum}`);
+
+            this.bookink.push(`${name} -${passangerNum} - ${this.flightName} - ${this.flightNum}`);
+            }
+        }
+        bookingSystem.ticketinfo('satyam', '+91xxxx32');
+        bookingSystem.ticketinfo('Manish', '+91xxxx43');
+        console.log(bookingSystem);
+       let newBookingSystem = {
+        bookink : []
+       }
+       console.log(newBookingSystem.bookink);
+ --*/
+
+      const myObject = {
+        myMethod: function (arg1, arg2) {
+          console.log(`Arguments: ${arg1}, ${arg2}`);
+          console.log(`This refers to:`, this);
+        },
+      };
+
+      myObject.myMethod("hello", "world");
+
+      // here we are normally calling a function inside of object;
+
+      myObject.myMethod('calling1', 'calling2');
+
+
+      // Output:
+      // Arguments: hello, world
+      // This refers to: { myMethod: [Function: myMethod] }
+    </script>
+  </body>
+</html>

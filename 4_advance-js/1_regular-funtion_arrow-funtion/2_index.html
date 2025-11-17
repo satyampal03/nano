@@ -1,0 +1,47 @@
+
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argument keywords</title>
+</head>
+<body>
+    <script>
+        let userName = "mohit";
+
+        const obj = {
+
+            userName :"ramesh",
+            birthyr  :  1990,
+
+            calAge : function(){
+
+                let x = 2025 - this.birthyr;
+                return (`${x} = yr old, this is me ${this.userName}` ); // if i will not use the this. property then this will take the global var
+            }, // function Ending Here Expression function 
+
+            user : ()=> {
+                return (`hey this is => ${userName}`); // this will give us the global variable name
+            }, // arrow function 
+
+            userCalculation : (a, b,z)=> {
+                // let z = (this.birthyr);
+                return a+b+z; //  
+            } // -=> arrow function 
+        }  // ending obj
+
+
+            console.log(obj.calAge());
+            console.log(obj.user());
+
+            console.log(obj.userCalculation(20,40, 1990)); // will work 
+            console.log(obj.userCalculation(10,50)); // nan
+            console.log(obj.userCalculation(200, 400));// nan
+            console.log(obj.userCalculation(202,490));//  nan
+
+
+            // this keyword is presents here the maine object where inside this;
+    </script>
+</body>
+</html>

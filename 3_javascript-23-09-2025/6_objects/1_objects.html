@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            firstName : "ramesh",
+            lashtName : "kumar",
+            age: 34,
+            work : "teacher"
+        }
+
+
+        console.log(person);
+
+        console.log(person.lashtName); // using . method we can get the value of the person,
+
+        console.log(person['lastName']); // we can also get the lastName value using the big brecket,
+
+        let userPromt = prompt("Get Person Access - firstName, lashtName,age,work");
+
+        console.log(person[userPromt]); // from this way we can directly manuplate the user input;
+        
+        // give the person key and get the given key of value
+    </script>
+</body>
+</html>

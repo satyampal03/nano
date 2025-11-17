@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular function and arrow funcion in js</title>
+</head>
+<body>
+    <script>
+        let userName = "mohit";
+
+        const obj = {
+
+            userName :"ramesh",
+            birthyr  :  1990,
+            calAge : function(){
+
+                let x = 2025 - this.birthyr;
+                return (`${x} = yr old, this is me ${this.userName}` ); // if i will not use the this. property then this will take the local variable 
+            },
+
+            user : ()=> {
+                return (`hey this is => ${userName}`); // this will give us the global variable name
+            }
+
+        }
+            console.log(obj.calAge());
+            console.log(obj.user());
+
+            // this keyword is presents here the maine object where inside this;
+    </script>
+</body>
+</html>

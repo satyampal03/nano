@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread-operator in Data-Structure</title>
+</head>
+<body>
+    <script>
+        "use strict";
+    
+        const restaurant = {
+            name: "Classico Italiano",
+            location: "Via Angelo Tavanti 23, Firenze, Italy",
+            categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+            starterMenu: ["Focaccia","Bruschetta","Garlic Bread","Caprese Salad",],
+            mainMenu: ["Pizza", "Pasta", "Risotto"],
+        };
+        
+        const arr = [7, 8, 9];
+        const newArr = [1, 2, ...arr]; // here we are using the (spread operator)
+        console.log(newArr); // we will get here [1, 2, 7, 8, 9]
+
+        const oneMoreArr = [ ...arr, ...arr, 10, 11, 12];
+        console.log(oneMoreArr); // We will get the 1st newarr twice and then 10, 11, 12
+
+        const newRestaurant = {...restaurant.starterMenu, foundedIn: 1998, founder: "Giuseppe"};
+
+        console.log(newRestaurant); // we will get here the (starterMenu) array and then the (foundedIn) and (founder) key value pair
+        
+    </script>
+</body>
+</html>

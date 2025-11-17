@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*element selector 
+        this denoted via direct elem - (name) */
+        P{
+            background-color:  red;
+         color: white; 
+        
+    }
+        
+    /* CLASS SELECTOR  
+    this denoted via dot(.) */
+    .myclass{
+        background-color: azure;
+        color: red;
+    }
+
+    /* ID SELECTOR  
+    this denoted via dot(#) 
+    */
+    #myid{
+        background-color: blue;
+        color: white;
+    }
+
+    /* CHILED SELECTOR  
+    
+    
+    (agar parent element ke under sub element hoga ahar paragraph tag then 
+    
+    hi is pr style apply kregi)
+    */
+
+    div> p {
+        background-color: green;
+        color:white;
+        }
+        
+        /* DECENDENT SELECTOR  
+            (agar parent element ke under khi bhi h3 hoga ye apply ho jayega)
+        */
+        
+    div h3 {
+        background-color: rgb(148, 157, 216);
+        color:rgb(125, 3, 3);
+        }
+
+
+        /* UNIVERSAL SELECTOR 
+        
+        This selector is universal if we will write the css inside of this section css will apply on all universally
+        
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       /* PSEUDO SELECTOR 
+       */
+       
+       a:link{
+        background-color: crimson;
+        color: white;
+       }
+       a:visited{
+        background-color: aquamarine;
+              }
+
+
+              a:active{
+                background-color: chartreuse;
+              }
+
+              div:hover{
+                background-color: rgb(191, 0, 255);
+              }
+ </style>
+</head>
+<body>
+    <p>element selector--paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, sed?</p>
+
+    <div class="myclass"> Class selector ---Lorem <p>Lorem,
+        <h3>
+            this is heading
+        </h3> ipsum.</p>ipsum dolor sit amet consectetur adipisicing elit. At, odio!</div>
+
+    <h3 id="myid"> ID selector --Lorem ipsum dolor,<a href="https://www.google.com/">Google</a> sit amet consectetur adipisicing elit. Placeat, ad!</h3>
+</body>
+</html>

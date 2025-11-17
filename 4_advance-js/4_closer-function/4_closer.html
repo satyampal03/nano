@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>closer</title>
+  </head>
+  <body>
+    <script>
+      function greet(greeting , name ) {
+        return function (name) {
+          console.log(greeting + " " + name);
+        };
+      }
+
+      const greeterHey = greet('hey -> ');
+
+      greeterHey('satyam');
+      greeterHey('pal');
+
+
+      greet('Satyam')('Pal');
+    </script>
+  </body>
+</html>

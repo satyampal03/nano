@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 111;
+        let b = 999;
+        const obj = {a: 23, b: 7, c: 14};
+        ({a, b} = obj); // paranthesis is required when we are doing the mutating variables
+        console.log(a, b); // we will get here 23 and   [7 a and b value is changed]
+    </script>
+</body>
+</html>

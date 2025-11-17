@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+  </head>
+  <body>
+    <script>
+      const gameEvents = new Map([
+        [17, "⚽ GOAL"],
+        [36, "🔄 Substitution"],
+        [47, "⚽ GOAL"],
+        [61, "🔄 Substitution"],
+        [64, "🟨 Yellow card"],
+        [69, "🔴 Red card"],
+        [70, "🔄 Substitution"],
+        [72, "🔄 Substitution"],
+        [76, "⚽ GOAL"],
+        [80, "⚽ GOAL"],
+        [92, "🟨 Yellow card"],
+      ]);
+
+      console.log(gameEvents);
+
+      // As the ques 1> we have to create a new set name - event
+
+      const event = new Set(gameEvents.values());
+
+      console.log(event); // will gives us the uniqu values,
+
+      // As the ques 2> we have to remove a
+      gameEvents.delete(64); // will remove the 64 key and value
+
+      // 3 > every play step happen within the how much minutes?
+
+      console.log(
+        `An event happen on average - minutes ${90 / gameEvents.size}, minutes`
+      );
+
+      const time = [...gameEvents.keys()].pop(); // pop method hota hai array mw last element ko remove kr deta hai (and here is we have call the last elem)
+
+      console.log([...gameEvents.keys()]);
+      console.log(time);
+
+      for (const [minute, event] of gameEvents) {
+        const half = minute <= 45 ? "FIRST" : "SECOND";
+        console.log(`[${half} HALF] ${minute}: ${event}`);
+      }
+    </script>
+  </body>
+</html>

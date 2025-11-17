@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested Destructiuring 
+- objects in js?
+    </title>
+</head>
+<body>
+    <script>
+        const userProfile = {
+  id: 123,
+  name: {
+    firstName: 'Jane',
+    lastName: 'Doe'
+  },
+  contact: {
+    email: 'jane.doe@example.com',
+    phone: '555-1234'
+  },
+  address: {
+    street: '123 Main St',
+    city: 'Anytown',
+    zip: '12345'
+  }
+};
+
+// Destructuring nested objects
+const {
+  name: { firstName, lastName },
+  contact: { email },
+  address: { city, zip: postalCode } // Renaming 'zip' to 'postalCode'
+} = userProfile;
+
+console.log(firstName);    // Output: Jane
+console.log(lastName);     // Output: Doe
+console.log(email);        // Output: jane.doe@example.com
+console.log(city);         // Output: Anytown
+console.log(postalCode);   // Output: 12345
+// console.log(zip); // This would result in an error as 'zip' was renamed
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+alert("this is the script of my web")

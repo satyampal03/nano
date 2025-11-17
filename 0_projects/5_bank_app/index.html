@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEMO : Calculation</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2cc405727a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" style="color: aqua;" />
+</head>
+
+<body>
+    <!-- Navigation For the Banking Application -->
+    <nav class="navigation">
+        <div class="user_info nav-item">Good Morning, Jonas!</div>
+        <div class="logo nav-item">
+            <img src="assets/logo.png" class="logo_image" alt="Logo Not Found" height="50" width="50" />
+        </div>
+        <div class="user_loginInfo nav-item">
+            <input class="userLogin_btn user-name_btn" placeholder="USER" />
+            <input class="userLogin_btn user-password_btn" maxlength="4" placeholder="PIN" />
+            <button class="login_btn">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!--  Current Balance Section -->
+    <div class="balance-info hide-content">
+        <div class="balance-heading">
+            <h3 class="balance-title">Current balance</h3>
+            <p class="date-time">As of 21/10/2025, 11:30</p>
+        </div>
+        <div class="actual-balance">
+            <h2 class="availble-balance">39 952,59 €</h2>
+        </div>
+    </div>
+
+    <!-- Transection and  special Features (Operations)   -->
+
+    <div class="transection-operations hide-content">
+        <div class="aside-containers transection-field">
+
+            <!-- Deposit Statemetn Content Starts From here -->
+
+            <div class="transection-statements">
+                <div class="transection-statement-history">
+                    <div class="transection-type-deposit">
+                        1 Deposit
+                    </div>
+                    <div class="transection-time">
+                        11/03/2021
+                    </div>
+                </div>
+
+                <div class="transection-amount">
+                    1230,00 €
+                </div>
+            </div>
+            <!-- Deposit Statemetn Content ending From here -->
+
+
+            <!-- Withdrals Statements Content Starts From here -->
+
+            <div class="transection-statements hide-content">
+                <div class="transection-statement-history">
+                    <div class="transection-type-withdrals">
+                        1 Withdrawal
+                    </div>
+                    <div class="transection-time">
+                        02/03/2022
+                    </div>
+                </div>
+
+                <div class="transection-amount">
+                    1500,00 €
+                </div>
+            </div>
+
+            <!-- ends here withdrals statement --><!-- Deposit Statemetn Content Starts From here -->
+
+        </div>
+
+
+        <div class="aside-containers operations-field hide-content">
+
+            <div class="operations-box transfer-money">
+                <p class="transfer-heading">Transfer Money </p>
+                <div class="transfer-input-fields">
+                    <div class="input-align">
+                        <input type="text" maxlength="16 " class="transfer-input transfer-to-username" />
+                        Transfer to
+                    </div>
+
+                    <div class="input-align">
+                        <input type="number" maxlength="16" class="transfer-input transfer-amount" />
+                        Amount
+                    </div>
+
+                    <div class="input-align">
+                        <button class="transfer-btn"><i class="fa-solid fa-arrow-right move-to-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="operations-box request-loan">
+                <p class="request-heading"> Request Loan</p>
+                <div class="request-input-fields">
+
+                    <div class="input-align">
+                        <input type="number" maxlength="16" class="transfer-input request-amount" />
+                        Amount
+                    </div>
+
+                    <div class="input-align">
+                        <button class="request-loan-btn"><i class="fa-solid fa-arrow-right move-to-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="operations-box close-account">
+                <p class="close-account-heading">Close Account</p>
+                <div class="close-account-input-fields">
+                    <div class="input-align">
+                        <input type="text" maxlength="16 " class="close-account-input confirm-username" />
+                        Confirm user
+                    </div>
+
+                    <div class="input-align">
+                        <input type="number" maxlength="16" class="close-account-input confirm-pin" />
+                        Confirm PIN
+                    </div>
+
+                    <div class="input-align">
+                        <button class="close-account-btn"><i class="fa-solid fa-arrow-right move-to-right"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account status -->
+    <div class="status-main-section hide-content">
+        <div class="account-status">
+            <div class="account-status-bar">
+                <p>
+                    In
+                    <span class="account-status-amount amount-in">41 035,20 €</span>
+                    Out<span class="account-status-amount amount-out">1082,61 €</span>
+                    Interest<span class="account-status-amount intrest-amount">491,46 €</span>
+                </p>
+            </div>
+            <div class="account-status-filter">
+                <p>Short<i class="fa-solid fa-filter filter-icon"></i></p>
+            </div>
+        </div>
+        <div class="account-logged-out">
+            You will be logged out in <span class="session-left"> 00:35</span>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+body{
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    margin: 1rem;
+    background-color: aquamarine;
+    padding: 40px; 
+
+    
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.box p{
+    padding: 30px;
+}
+
+.details-content{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    background-color:rgb(130, 52, 52) ;
+    color: white;
+
+}
+
+.show-content{
+    height: 400px;
+
+}
+
+.hide{
+    display: none;
+}
+
+.user-hand{
+    animation-name:user-hand-animation;
+    animation-duration:  0.3s;
+    animation-iteration-count:5;
+     animation-timing-function: inline;  /*animation kaise move hoga*/
+     animation-delay: 0s; 
+     /* animation-direction: ; */
+}
+
+.comp-hand{
+    animation: comp-hand-animation;
+     animation-duration:  0.3s;
+    animation-iteration-count:5;
+     animation-timing-function: inline;  /*animation kaise move hoga*/
+     animation-delay: 0s; 
+     /* animation-direct    ion: ; */
+}
+
+@keyframes user-hand-animation {
+  0% {
+    transform: rotate(0deg); /* Starting rotation */
+  }
+  50% {
+    transform: rotate(20deg); /* Ending rotation (full circle) */
+  }
+  100%{
+    transform: rotate(-20deg);
+  }
+
+}
+
+@keyframes comp-hand-animation {
+      0% {
+    transform: rotate(0deg); /* Starting rotation */
+  }
+  50% {
+    transform: rotate(-20deg); /* Ending rotation (full circle) */
+  }
+  100%{
+    transform: rotate(20deg);
+  }
+}
+
+.button{
+    height: 70px;
+    width: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    position:absolute;
+    top: 30px;
+    right: 50px;
+    border: none;
+    border-radius:10px;
+    background-color: red;
+    box-shadow: 2px 3px 50px rgb(34, 73, 192);
+
+}

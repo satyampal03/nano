@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - FORMS</title>
+</head>
+<body>
+
+    <!-- form in html    pattern w - words  and n indicates that number should be  -->
+ <form action="/action_page.php">
+  <label for="fname" pattern="\w{3,16}" required>First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+    <!-- radio button in html it's use only one value can select at a time  -->
+  <input type="radio">
+
+
+    <!-- checkbox in html form  -->
+<br>
+        <h3>What's you'r Fav- Fruits</h3>
+         <label for="checkbox1">apple</label>
+            <input type="checkbox" name="x" id="checkbox1">   <br>
+        <label for="checkbox2">banana</label>
+            <input type="checkbox" name="x" id="checkbox2">   <br>
+        <label for="checkbox3">grapes</label>
+            <input type="checkbox" name="x" id="checkbox3">   <br>
+        <label for="checkbox4">orange</label>
+            <input type="checkbox" name="x" id="checkbox4"><br>
+
+
+    <!-- text area  -->
+
+        <label for="textarea1">Please Comment Here</label>
+            <textarea name="Please say Something" rows="4" cols="50"  id="textarea1"></textarea>
+            <br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+</body>
+</html>

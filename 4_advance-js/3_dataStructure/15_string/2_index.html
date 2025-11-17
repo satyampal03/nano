@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String-methods</title>
+  </head>
+  <body>
+    <script>
+      let passenger = "ram aam khata hai";
+
+      const passengerLower = passenger.toLowerCase();
+
+      let loginEmail = " xyz@gmail.com";
+
+      const lowerEmail = loginEmail.toLowerCase();
+      const trimmedEmail = lowerEmail.trim();
+
+      const normalizedEmail = loginEmail.toLowerCase().trim();
+
+      // REPLACING ---
+
+      let priceGB = "3242343,2343£";
+      const priceUS = priceGB.replace("£", "$").replace(",", ".");
+
+      const plane = "Airbus A320neo";
+      console.log(plane.includes("A320"));
+      console.log(plane.startsWith("Airbus"));
+      console.log(plane.endsWith("neo"));
+
+
+      function checkBaggage(items) {
+  const baggage = items.toLowerCase();
+  if (baggage.includes('knife') || baggage.includes('gun')) {
+    console.log('You are not allowed on board.');
+  } else {
+    console.log('Welcome aboard.');
+  }
+}
+    </script>
+  </body>
+</html>

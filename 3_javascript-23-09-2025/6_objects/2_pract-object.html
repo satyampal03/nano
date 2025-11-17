@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice object</title>
+</head>
+<body>
+    <script>
+        const boy = {
+            name : 'Raja',
+            age : 15,
+            email : "xyz@gmail.com",
+            part_time : "NoP",
+            hobey:'playing'
+        }
+
+        let userPromt = prompt("please get  boy acces-"); 
+
+        if(boy[userPromt]){
+            console.log(` ${boy[userPromt]}`);  
+        }else{
+            console.log(`not matching any identity -> ${userPromt}- Wrong-Prompt `);
+        }
+    </script>
+</body>
+</html>

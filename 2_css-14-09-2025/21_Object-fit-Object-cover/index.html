@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit and Object-cover</title>
+    <style>
+        .container{
+            height:600px;
+            width: 80vw;
+            margin: auto;
+            background-color: #ca0c0c;
+            border:none;
+            border-radius: 30px;
+            box-shadow: 20px 10px 15px rgb(212, 193, 193);
+            
+        }.container:hover{
+            height:600px;
+            width: 80vw;
+            margin: auto;
+            background-color: #d20707;
+            border:none;
+            border-radius: 30px;
+            box-shadow: 20px 10px 20px rgb(255, 0, 0);
+            
+        }
+
+
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: #f7f7f7;
+
+        }
+
+        .box img {
+            height: 200px;
+            width: 200px;
+            /* object-fit: contain;  it will contain the original image as same size*/ 
+            /* object-fit: cover; will cover as gien size here  */
+
+            object-fit: cover;
+            /* object-position: top right; will cover the space and fix as kshowing with top right side of the image */
+
+            object-position: bottom left;
+            border: none; 
+            /* border-radius:100px; */
+
+
+
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><img src="../0_ques/img/1_sunrise.webp" alt="not available"></div>
+    </div>
+</body>
+</html>
