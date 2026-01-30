@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> When we click on the browser how it works behind the scene </h1>
+
+    <!-- HTML: A button with a unique ID, like a label on a doorbell also we can target this using class and many other things like by parent first chield etc-->
+<button id="myButton">Click Me!</button>
+
+
+<!-- JavaScript: The instructions for when the doorbell rings we can understand by door well-->
+<script>
+  // 1. Find the element we care about using its ID or the other targeting-way as you can target 
+  const button = document.getElementById("myButton");
+
+  // 2. Tell it to listen for a 'click' yeah we are telling to js to listen what's happening there so we add a listner that will listen the event wht's happening actually, such as onClick (click) when user click on the certain item or button then we can are ginving it responce such as we are responsing him/her a message using callback function
+
+  // [easy way to understand here --> like when user click function trigered and it return a message]
+  button.addEventListener('click', function() {
+    // These instructions run ONLY when the button is clicked!
+    alert("You clicked the button!"); 
+  });   
+  
+  // this all happen when a click happen on the web browser.
+
+</script>
+
+
+</body>
+</html>
