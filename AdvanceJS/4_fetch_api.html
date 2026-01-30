@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Featch API's</h1>
+
+    <script>
+
+        function fetchFact() {
+           fetch('https://api.example.com/data') //
+            .then(response => response.json()) //The API sends data back; we open it that's now in json formate 
+            .then(data => {
+      // We finally get the food (the data!) and use it
+      console.log(data); //
+      alert("Here is your data: " + JSON.stringify(data));
+    })
+    .catch(error => {
+      // Uh oh, the request failed! Handle the error
+      console.error('Error:', error);
+    });
+
+
+    // this is very simplest way to fetch a api
+
+    function fetchAPI(){
+        fetch('api_url.com/home?jsnf_0.jn') // we have fetched the api
+        .then(response => response.json()) // api give back it's response into the json formate
+        .then(data =>{
+            console.log(data); // there we can easily read the api response data
+        })
+        .catch(err =>{
+            console.log('server side Error', err); // this catch block specially to catch the error if something error come from the API's Server side it will return in the catch block.
+        })
+  
+    }
+}
+    </script>
+</body>
+</html>
