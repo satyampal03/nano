@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grab the Values from a Form How it works Behind the Scence</title>
+</head>
+<body>
+
+    <!-- We create like a form Field Where From We will collect the value of the form that is fielled by the user -->
+    <input type="text" id="name" placeholder="Please Enter here you'r Name">
+      <button onClick='showName()'>Submit</button>
+     
+      <!-- What happen when a Submit Button Triggered using the js-->
+      <script>
+
+        function showName(){
+        // getting the vallue from the from
+            const userName = document.getElementById('name');
+
+        // Now we are getting the value from the name_field
+           const name = userName.value;
+
+           console.log(`Hey ${name}, How are you today`);
+        }
+
+
+      </script>
+
+</body>
+</html>
