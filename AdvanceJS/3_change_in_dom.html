@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- HTML: A paragraph that is hidden at first -->
+<p id="secretMessage" style="display: none; color:red; background-color: azure;">You found me!</p>
+<button onclick="revealMessage()">Reveal Secret</button>
+
+<!-- JavaScript: A function to change the style -->
+<script>
+  function revealMessage() {
+    const messageElement = document.getElementById("secretMessage");
+    
+    // Change the CSS style property from 'none' to 'block'
+    messageElement.style.display = 'block'; //
+  }
+</script>
+
+
+</body>
+</html>
