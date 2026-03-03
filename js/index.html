@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+<div id="dragItem" class="item" draggable="true">Drag Me!</div>
+<div id="dropZone" class="container">Drop Here</div>
+
+
+<script >
+
+const item = document.getElementById('dragItem');
+const dropZone = document.getElementById('dropZone');
+
+// 1. When dragging starts, store the ID of the element
+item.addEventListener('dragstart', (e) => {
+  e.dataTransfer.setData('text/plain', e.target.id);
+  e.target.style.opacity = '0.5'; // Visual feedback
+});
+
+// 2. By default, browsers prevent dropping. You MUST preventDefault to allow it.
+dropZone.addEventListener('dragover', (e) => {
+  e.preventDefault();
+});
+
+// 3. Handle the drop event
+dropZone.addEventListener('drop', (e) => {
+  e.preventDefault();
+  const id = e.dataTransfer.getData('text/plain');
+  const draggedElement = document.getElementById(id);
+  
+  // Append the element to the new container
+  e.target.appendChild(draggedElement);
+  draggedElement.style.opacity = '1';
+  
+});
+
+
+</script>
+</body>
+</html>
